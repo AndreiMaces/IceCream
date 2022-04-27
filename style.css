@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 32px;
+    font-family: 'Inspiration', cursive;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: rgb(255, 0, 106);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+nav > * {
+    display: inline-block;
+}
+
+.nav-items {
+    height: 100%;
+    float: right;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-items > li {
+    display: block;
+    font-size: 0.5em;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron > h1 {
+    color: white;
+}
+
+.flavours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-flow: row wrap;
+}
+
+.type {
+    width: 200px;
+}
+
+.image {
+    width: 100%;
+}
+
+.image > img {
+    width: 100%;
+    height: auto;
+}
+
+.process {
+    background-color:rgb(255, 0, 106);
+    color: white;
+    margin: 0;
+}
+
+.contact {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.info, .copyright {
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+
+.info {
+    font-size: 0.75em;
+}
+
+.copyright {
+    font-size: 0.5em;
+    background-color:rgb(255, 0, 106);
+    color: white;
+}
+
+.contact {
+    background-color: rgb(241, 241, 241);
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 0.75em;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+    .types {
+        gap: 20px;
+    }
+
+    .type {
+        width: 150px;
+    }
+    
+}
